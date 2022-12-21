@@ -14,9 +14,9 @@ public class Password {
 
 	public Object[] CreateAccount() {
 		SC = new Scanner(System.in);
-		System.out.println("To Create Account Give ID = ");
+		System.out.print("To Create Account Give ID = ");
 		String ID = SC.nextLine();
-		System.out.println("To Create Account Give ID = ");
+		System.out.print("To Create Account Give ID = ");
 		String Pass = SC.nextLine();
 
 		return new Object[] { ID, Pass };
@@ -24,9 +24,9 @@ public class Password {
 
 	public String Login() {
 		Object[] A = new Password().CreateAccount();
-		System.out.println("What is your User_name : ");
+		System.out.print("What is your User_name : ");
 		String User_name = SC.next().trim();
-		System.out.println("What is your Password : ");
+		System.out.print("What is your Password : ");
 		String Password = SC.next().trim();
 
 		if ((User_name.equals(A[0])) && (Password.equals(A[1]))) {
